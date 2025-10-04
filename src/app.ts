@@ -14,7 +14,7 @@ app.use(express.json()); // Parse incoming JSON requests
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: process.env.FRONTEND_URL,
     credentials: true,
   })
 );
